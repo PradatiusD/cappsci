@@ -1,1 +1,43 @@
+$red-orange: #F74326
+
+$navbar-default-bg: white
+$brand-primary: $red-orange
+$navbar-default-link-color: $red-orange
+$navbar-default-toggle-border-color: $red-orange
+
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+
+
+.navbar
+	.cappsci-logo
+		height: 45px
+		position: relative
+		bottom: 14px
+
+
+#skild-content
+	@extend .container
+
+	.login
+		text-align: left
+
+	input[type="submit"]
+		@extend .btn
+		@extend .btn-primary
+
+	#username, #login_password
+		@extend .form-control
+
+
+.registration-footer
+	background: $red-orange
+
+	a, &, input, .cappsci-logo
+		color: white
+
+	.list-unstyled a
+		padding: 0.75em 0
+		display: block
+
+	.copyright
+		padding-bottom: 1em
