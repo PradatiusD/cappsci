@@ -4604,7 +4604,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 
@@ -4912,8 +4912,8 @@ tbody.collapse.in {
 
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4958,7 +4958,7 @@ tbody.collapse.in {
 }
 .navbar-default {
   background-color: white;
-  border-color: #eeeeee;
+  border-color: #f74326;
 }
 .navbar-default .navbar-brand {
   color: #f74326;
@@ -4989,14 +4989,14 @@ tbody.collapse.in {
   border-color: #f74326;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: white;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888888;
+  background-color: #f74326;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #eeeeee;
+  border-color: #f74326;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: #eeeeee;
@@ -7203,6 +7203,9 @@ button.close {
     display: none !important;
   }
 }
+.navbar {
+  border-top: none;
+}
 .navbar .cappsci-logo {
   height: 45px;
   position: relative;
@@ -7215,9 +7218,13 @@ button.close {
 
 .registration-footer {
   background: #f74326;
+  padding-top: 2em;
 }
-.registration-footer a, .registration-footer, .registration-footer input, .registration-footer .cappsci-logo {
+.registration-footer a, .registration-footer, .registration-footer input {
   color: white;
+}
+.registration-footer .cappsci-logo {
+  height: 200px;
 }
 .registration-footer .list-unstyled a {
   padding: 0.75em 0;

@@ -4,11 +4,17 @@ $navbar-default-bg: white
 $brand-primary: $red-orange
 $navbar-default-link-color: $red-orange
 $navbar-default-toggle-border-color: $red-orange
+$navbar-default-toggle-hover-bg: lighten($red-orange, 50)
+$navbar-default-toggle-icon-bar-bg: $red-orange
+$navbar-default-toggle-border-color: $red-orange
+$navbar-default-border: $red-orange
+$navbar-border-radius: 0px
 
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
 
 
 .navbar
+	border-top: none
 	.cappsci-logo
 		height: 45px
 		position: relative
@@ -31,9 +37,13 @@ $navbar-default-toggle-border-color: $red-orange
 
 .registration-footer
 	background: $red-orange
+	padding-top: 2em
 
-	a, &, input, .cappsci-logo
+	a, &, input
 		color: white
+	
+	.cappsci-logo
+		height: 200px
 
 	.list-unstyled a
 		padding: 0.75em 0
