@@ -287,9 +287,10 @@ th {
     display: none;
   }
 
-  .btn > .caret, #skild-content input[type="submit"] > .caret,
+  .btn > .caret, #skild-content input[type="submit"] > .caret, #searchEntries > .caret,
   .dropup > .btn > .caret,
-  #skild-content .dropup > input[type="submit"] > .caret {
+  #skild-content .dropup > input[type="submit"] > .caret,
+  .dropup > #searchEntries > .caret {
     border-top-color: #000 !important;
   }
 
@@ -3106,7 +3107,7 @@ output {
   color: #555555;
 }
 
-.form-control, #skild-content #username, #skild-content #login_password {
+.form-control, #skild-content #username, #skild-content #login_password, .formel.textbox input, .formel.textbox select, .formel.password input, .formel.password select, .formel.select input, .formel.select select, #searchTerm, #sort, #filterBy {
   display: block;
   width: 100%;
   height: 34px;
@@ -3124,29 +3125,29 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:focus, #skild-content #username:focus, #skild-content #login_password:focus {
+.form-control:focus, #skild-content #username:focus, #skild-content #login_password:focus, .formel.textbox input:focus, .formel.textbox select:focus, .formel.password input:focus, .formel.password select:focus, .formel.select input:focus, .formel.select select:focus, #searchTerm:focus, #sort:focus, #filterBy:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.form-control::-moz-placeholder, #skild-content #username::-moz-placeholder, #skild-content #login_password::-moz-placeholder {
+.form-control::-moz-placeholder, #skild-content #username::-moz-placeholder, #skild-content #login_password::-moz-placeholder, .formel.textbox input::-moz-placeholder, .formel.textbox select::-moz-placeholder, .formel.password input::-moz-placeholder, .formel.password select::-moz-placeholder, .formel.select input::-moz-placeholder, .formel.select select::-moz-placeholder, #searchTerm::-moz-placeholder, #sort::-moz-placeholder, #filterBy::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, #skild-content #username:-ms-input-placeholder, #skild-content #login_password:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, #skild-content #username:-ms-input-placeholder, #skild-content #login_password:-ms-input-placeholder, .formel.textbox input:-ms-input-placeholder, .formel.textbox select:-ms-input-placeholder, .formel.password input:-ms-input-placeholder, .formel.password select:-ms-input-placeholder, .formel.select input:-ms-input-placeholder, .formel.select select:-ms-input-placeholder, #searchTerm:-ms-input-placeholder, #sort:-ms-input-placeholder, #filterBy:-ms-input-placeholder {
   color: #999999;
 }
-.form-control::-webkit-input-placeholder, #skild-content #username::-webkit-input-placeholder, #skild-content #login_password::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, #skild-content #username::-webkit-input-placeholder, #skild-content #login_password::-webkit-input-placeholder, .formel.textbox input::-webkit-input-placeholder, .formel.textbox select::-webkit-input-placeholder, .formel.password input::-webkit-input-placeholder, .formel.password select::-webkit-input-placeholder, .formel.select input::-webkit-input-placeholder, .formel.select select::-webkit-input-placeholder, #searchTerm::-webkit-input-placeholder, #sort::-webkit-input-placeholder, #filterBy::-webkit-input-placeholder {
   color: #999999;
 }
-.form-control[disabled], #skild-content [disabled]#username, #skild-content [disabled]#login_password, .form-control[readonly], #skild-content [readonly]#username, #skild-content [readonly]#login_password, fieldset[disabled] .form-control, fieldset[disabled] #skild-content #username, #skild-content fieldset[disabled] #username, fieldset[disabled] #skild-content #login_password, #skild-content fieldset[disabled] #login_password {
+.form-control[disabled], #skild-content [disabled]#username, #skild-content [disabled]#login_password, .formel.textbox input[disabled], .formel.textbox select[disabled], .formel.password input[disabled], .formel.password select[disabled], .formel.select input[disabled], .formel.select select[disabled], [disabled]#searchTerm, [disabled]#sort, [disabled]#filterBy, .form-control[readonly], #skild-content [readonly]#username, #skild-content [readonly]#login_password, .formel.textbox input[readonly], .formel.textbox select[readonly], .formel.password input[readonly], .formel.password select[readonly], .formel.select input[readonly], .formel.select select[readonly], [readonly]#searchTerm, [readonly]#sort, [readonly]#filterBy, fieldset[disabled] .form-control, fieldset[disabled] #skild-content #username, #skild-content fieldset[disabled] #username, fieldset[disabled] #skild-content #login_password, #skild-content fieldset[disabled] #login_password, fieldset[disabled] .formel.textbox input, .formel.textbox fieldset[disabled] input, fieldset[disabled] .formel.textbox select, .formel.textbox fieldset[disabled] select, fieldset[disabled] .formel.password input, .formel.password fieldset[disabled] input, fieldset[disabled] .formel.password select, .formel.password fieldset[disabled] select, fieldset[disabled] .formel.select input, .formel.select fieldset[disabled] input, fieldset[disabled] .formel.select select, .formel.select fieldset[disabled] select, fieldset[disabled] #searchTerm, fieldset[disabled] #sort, fieldset[disabled] #filterBy {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 
-textarea.form-control, #skild-content textarea#username, #skild-content textarea#login_password {
+textarea.form-control, #skild-content textarea#username, #skild-content textarea#login_password, textarea#searchTerm, textarea#sort, textarea#filterBy {
   height: auto;
 }
 
@@ -3161,63 +3162,107 @@ input[type="search"] {
   input[type="month"] {
     line-height: 34px;
   }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, #skild-content .input-group-sm > input[type="date"]#username, #skild-content .input-group-sm > input[type="date"]#login_password,
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, #skild-content .input-group-sm > input[type="date"]#username, #skild-content .input-group-sm > input[type="date"]#login_password, .formel.textbox .input-group-sm > input[type="date"], .formel.password .input-group-sm > input[type="date"], .formel.select .input-group-sm > input[type="date"], .input-group-sm > input[type="date"]#searchTerm, .input-group-sm > input[type="date"]#sort, .input-group-sm > input[type="date"]#filterBy,
   .input-group-sm > input[type="date"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="date"].btn,
-  #skild-content .input-group-sm > .input-group-btn > input[type="date"][type="submit"], .input-group-sm input[type="date"],
+  #skild-content .input-group-sm > .input-group-btn > input[type="date"][type="submit"],
+  .input-group-sm > .input-group-btn > input[type="date"]#searchEntries, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   #skild-content .input-group-sm > input[type="time"]#username,
   #skild-content .input-group-sm > input[type="time"]#login_password,
+  .formel.textbox .input-group-sm > input[type="time"],
+  .formel.password .input-group-sm > input[type="time"],
+  .formel.select .input-group-sm > input[type="time"],
+  .input-group-sm > input[type="time"]#searchTerm,
+  .input-group-sm > input[type="time"]#sort,
+  .input-group-sm > input[type="time"]#filterBy,
   .input-group-sm > input[type="time"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="time"].btn,
-  #skild-content .input-group-sm > .input-group-btn > input[type="time"][type="submit"], .input-group-sm
+  #skild-content .input-group-sm > .input-group-btn > input[type="time"][type="submit"],
+  .input-group-sm > .input-group-btn > input[type="time"]#searchEntries, .input-group-sm
   input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   #skild-content .input-group-sm > input[type="datetime-local"]#username,
   #skild-content .input-group-sm > input[type="datetime-local"]#login_password,
+  .formel.textbox .input-group-sm > input[type="datetime-local"],
+  .formel.password .input-group-sm > input[type="datetime-local"],
+  .formel.select .input-group-sm > input[type="datetime-local"],
+  .input-group-sm > input[type="datetime-local"]#searchTerm,
+  .input-group-sm > input[type="datetime-local"]#sort,
+  .input-group-sm > input[type="datetime-local"]#filterBy,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
-  #skild-content .input-group-sm > .input-group-btn > input[type="datetime-local"][type="submit"], .input-group-sm
+  #skild-content .input-group-sm > .input-group-btn > input[type="datetime-local"][type="submit"],
+  .input-group-sm > .input-group-btn > input[type="datetime-local"]#searchEntries, .input-group-sm
   input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   #skild-content .input-group-sm > input[type="month"]#username,
   #skild-content .input-group-sm > input[type="month"]#login_password,
+  .formel.textbox .input-group-sm > input[type="month"],
+  .formel.password .input-group-sm > input[type="month"],
+  .formel.select .input-group-sm > input[type="month"],
+  .input-group-sm > input[type="month"]#searchTerm,
+  .input-group-sm > input[type="month"]#sort,
+  .input-group-sm > input[type="month"]#filterBy,
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn,
-  #skild-content .input-group-sm > .input-group-btn > input[type="month"][type="submit"], .input-group-sm
+  #skild-content .input-group-sm > .input-group-btn > input[type="month"][type="submit"],
+  .input-group-sm > .input-group-btn > input[type="month"]#searchEntries, .input-group-sm
   input[type="month"] {
     line-height: 30px;
   }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, #skild-content .input-group-lg > input[type="date"]#username, #skild-content .input-group-lg > input[type="date"]#login_password,
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, #skild-content .input-group-lg > input[type="date"]#username, #skild-content .input-group-lg > input[type="date"]#login_password, .formel.textbox .input-group-lg > input[type="date"], .formel.password .input-group-lg > input[type="date"], .formel.select .input-group-lg > input[type="date"], .input-group-lg > input[type="date"]#searchTerm, .input-group-lg > input[type="date"]#sort, .input-group-lg > input[type="date"]#filterBy,
   .input-group-lg > input[type="date"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="date"].btn,
-  #skild-content .input-group-lg > .input-group-btn > input[type="date"][type="submit"], .input-group-lg input[type="date"],
+  #skild-content .input-group-lg > .input-group-btn > input[type="date"][type="submit"],
+  .input-group-lg > .input-group-btn > input[type="date"]#searchEntries, .input-group-lg input[type="date"],
   input[type="time"].input-lg,
   .input-group-lg > input[type="time"].form-control,
   #skild-content .input-group-lg > input[type="time"]#username,
   #skild-content .input-group-lg > input[type="time"]#login_password,
+  .formel.textbox .input-group-lg > input[type="time"],
+  .formel.password .input-group-lg > input[type="time"],
+  .formel.select .input-group-lg > input[type="time"],
+  .input-group-lg > input[type="time"]#searchTerm,
+  .input-group-lg > input[type="time"]#sort,
+  .input-group-lg > input[type="time"]#filterBy,
   .input-group-lg > input[type="time"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="time"].btn,
-  #skild-content .input-group-lg > .input-group-btn > input[type="time"][type="submit"], .input-group-lg
+  #skild-content .input-group-lg > .input-group-btn > input[type="time"][type="submit"],
+  .input-group-lg > .input-group-btn > input[type="time"]#searchEntries, .input-group-lg
   input[type="time"],
   input[type="datetime-local"].input-lg,
   .input-group-lg > input[type="datetime-local"].form-control,
   #skild-content .input-group-lg > input[type="datetime-local"]#username,
   #skild-content .input-group-lg > input[type="datetime-local"]#login_password,
+  .formel.textbox .input-group-lg > input[type="datetime-local"],
+  .formel.password .input-group-lg > input[type="datetime-local"],
+  .formel.select .input-group-lg > input[type="datetime-local"],
+  .input-group-lg > input[type="datetime-local"]#searchTerm,
+  .input-group-lg > input[type="datetime-local"]#sort,
+  .input-group-lg > input[type="datetime-local"]#filterBy,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
-  #skild-content .input-group-lg > .input-group-btn > input[type="datetime-local"][type="submit"], .input-group-lg
+  #skild-content .input-group-lg > .input-group-btn > input[type="datetime-local"][type="submit"],
+  .input-group-lg > .input-group-btn > input[type="datetime-local"]#searchEntries, .input-group-lg
   input[type="datetime-local"],
   input[type="month"].input-lg,
   .input-group-lg > input[type="month"].form-control,
   #skild-content .input-group-lg > input[type="month"]#username,
   #skild-content .input-group-lg > input[type="month"]#login_password,
+  .formel.textbox .input-group-lg > input[type="month"],
+  .formel.password .input-group-lg > input[type="month"],
+  .formel.select .input-group-lg > input[type="month"],
+  .input-group-lg > input[type="month"]#searchTerm,
+  .input-group-lg > input[type="month"]#sort,
+  .input-group-lg > input[type="month"]#filterBy,
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn,
-  #skild-content .input-group-lg > .input-group-btn > input[type="month"][type="submit"], .input-group-lg
+  #skild-content .input-group-lg > .input-group-btn > input[type="month"][type="submit"],
+  .input-group-lg > .input-group-btn > input[type="month"]#searchEntries, .input-group-lg
   input[type="month"] {
     line-height: 46px;
   }
@@ -3296,21 +3341,24 @@ input[type="checkbox"] {
   padding-bottom: 7px;
   margin-bottom: 0;
 }
-.form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, #skild-content .input-group-lg > .form-control-static#username, #skild-content .input-group-lg > .form-control-static#login_password,
+.form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, #skild-content .input-group-lg > .form-control-static#username, #skild-content .input-group-lg > .form-control-static#login_password, .formel.textbox .input-group-lg > input.form-control-static, .formel.textbox .input-group-lg > select.form-control-static, .formel.password .input-group-lg > input.form-control-static, .formel.password .input-group-lg > select.form-control-static, .formel.select .input-group-lg > input.form-control-static, .formel.select .input-group-lg > select.form-control-static, .input-group-lg > .form-control-static#searchTerm, .input-group-lg > .form-control-static#sort, .input-group-lg > .form-control-static#filterBy,
 .input-group-lg > .form-control-static.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-static.btn,
-#skild-content .input-group-lg > .input-group-btn > input.form-control-static[type="submit"], .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, #skild-content .input-group-sm > .form-control-static#username, #skild-content .input-group-sm > .form-control-static#login_password,
+#skild-content .input-group-lg > .input-group-btn > input.form-control-static[type="submit"],
+.input-group-lg > .input-group-btn > .form-control-static#searchEntries, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, #skild-content .input-group-sm > .form-control-static#username, #skild-content .input-group-sm > .form-control-static#login_password, .formel.textbox .input-group-sm > input.form-control-static, .formel.textbox .input-group-sm > select.form-control-static, .formel.password .input-group-sm > input.form-control-static, .formel.password .input-group-sm > select.form-control-static, .formel.select .input-group-sm > input.form-control-static, .formel.select .input-group-sm > select.form-control-static, .input-group-sm > .form-control-static#searchTerm, .input-group-sm > .form-control-static#sort, .input-group-sm > .form-control-static#filterBy,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn,
-#skild-content .input-group-sm > .input-group-btn > input.form-control-static[type="submit"] {
+#skild-content .input-group-sm > .input-group-btn > input.form-control-static[type="submit"],
+.input-group-sm > .input-group-btn > .form-control-static#searchEntries {
   padding-left: 0;
   padding-right: 0;
 }
 
-.input-sm, .input-group-sm > .form-control, #skild-content .input-group-sm > #username, #skild-content .input-group-sm > #login_password,
+.input-sm, .input-group-sm > .form-control, #skild-content .input-group-sm > #username, #skild-content .input-group-sm > #login_password, .formel.textbox .input-group-sm > input, .formel.textbox .input-group-sm > select, .formel.password .input-group-sm > input, .formel.password .input-group-sm > select, .formel.select .input-group-sm > input, .formel.select .input-group-sm > select, .input-group-sm > #searchTerm, .input-group-sm > #sort, .input-group-sm > #filterBy,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
-#skild-content .input-group-sm > .input-group-btn > input[type="submit"] {
+#skild-content .input-group-sm > .input-group-btn > input[type="submit"],
+.input-group-sm > .input-group-btn > #searchEntries {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3318,42 +3366,60 @@ input[type="checkbox"] {
   border-radius: 3px;
 }
 
-select.input-sm, .input-group-sm > select.form-control, #skild-content .input-group-sm > select#username, #skild-content .input-group-sm > select#login_password,
+select.input-sm, .input-group-sm > select.form-control, #skild-content .input-group-sm > select#username, #skild-content .input-group-sm > select#login_password, .formel.textbox .input-group-sm > select, .formel.password .input-group-sm > select, .formel.select .input-group-sm > select, .input-group-sm > select#searchTerm, .input-group-sm > select#sort, .input-group-sm > select#filterBy,
 .input-group-sm > select.input-group-addon,
-.input-group-sm > .input-group-btn > select.btn {
+.input-group-sm > .input-group-btn > select.btn,
+.input-group-sm > .input-group-btn > select#searchEntries {
   height: 30px;
   line-height: 30px;
 }
 
-textarea.input-sm, .input-group-sm > textarea.form-control, #skild-content .input-group-sm > textarea#username, #skild-content .input-group-sm > textarea#login_password,
+textarea.input-sm, .input-group-sm > textarea.form-control, #skild-content .input-group-sm > textarea#username, #skild-content .input-group-sm > textarea#login_password, .input-group-sm > textarea#searchTerm, .input-group-sm > textarea#sort, .input-group-sm > textarea#filterBy,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
+.input-group-sm > .input-group-btn > textarea#searchEntries,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
 #skild-content .input-group-sm > select[multiple]#username,
 #skild-content .input-group-sm > select[multiple]#login_password,
+.formel.textbox .input-group-sm > select[multiple],
+.formel.password .input-group-sm > select[multiple],
+.formel.select .input-group-sm > select[multiple],
+.input-group-sm > select[multiple]#searchTerm,
+.input-group-sm > select[multiple]#sort,
+.input-group-sm > select[multiple]#filterBy,
 .input-group-sm > select[multiple].input-group-addon,
-.input-group-sm > .input-group-btn > select[multiple].btn {
+.input-group-sm > .input-group-btn > select[multiple].btn,
+.input-group-sm > .input-group-btn > select[multiple]#searchEntries {
   height: auto;
 }
 
-.form-group-sm .form-control, .form-group-sm #skild-content #username, #skild-content .form-group-sm #username, .form-group-sm #skild-content #login_password, #skild-content .form-group-sm #login_password {
+.form-group-sm .form-control, .form-group-sm #skild-content #username, #skild-content .form-group-sm #username, .form-group-sm #skild-content #login_password, #skild-content .form-group-sm #login_password, .form-group-sm .formel.textbox input, .formel.textbox .form-group-sm input, .form-group-sm .formel.textbox select, .formel.textbox .form-group-sm select, .form-group-sm .formel.password input, .formel.password .form-group-sm input, .form-group-sm .formel.password select, .formel.password .form-group-sm select, .form-group-sm .formel.select input, .formel.select .form-group-sm input, .form-group-sm .formel.select select, .formel.select .form-group-sm select, .form-group-sm #searchTerm, .form-group-sm #sort, .form-group-sm #filterBy {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
-.form-group-sm select.form-control, .form-group-sm #skild-content select#username, #skild-content .form-group-sm select#username, .form-group-sm #skild-content select#login_password, #skild-content .form-group-sm select#login_password {
+.form-group-sm select.form-control, .form-group-sm #skild-content select#username, #skild-content .form-group-sm select#username, .form-group-sm #skild-content select#login_password, #skild-content .form-group-sm select#login_password, .form-group-sm .formel.textbox select, .formel.textbox .form-group-sm select, .form-group-sm .formel.password select, .formel.password .form-group-sm select, .form-group-sm .formel.select select, .formel.select .form-group-sm select, .form-group-sm select#searchTerm, .form-group-sm select#sort, .form-group-sm select#filterBy {
   height: 30px;
   line-height: 30px;
 }
-.form-group-sm textarea.form-control, .form-group-sm #skild-content textarea#username, #skild-content .form-group-sm textarea#username, .form-group-sm #skild-content textarea#login_password, #skild-content .form-group-sm textarea#login_password,
+.form-group-sm textarea.form-control, .form-group-sm #skild-content textarea#username, #skild-content .form-group-sm textarea#username, .form-group-sm #skild-content textarea#login_password, #skild-content .form-group-sm textarea#login_password, .form-group-sm textarea#searchTerm, .form-group-sm textarea#sort, .form-group-sm textarea#filterBy,
 .form-group-sm select[multiple].form-control,
 .form-group-sm #skild-content select[multiple]#username,
 #skild-content .form-group-sm select[multiple]#username,
 .form-group-sm #skild-content select[multiple]#login_password,
-#skild-content .form-group-sm select[multiple]#login_password {
+#skild-content .form-group-sm select[multiple]#login_password,
+.form-group-sm .formel.textbox select[multiple],
+.formel.textbox .form-group-sm select[multiple],
+.form-group-sm .formel.password select[multiple],
+.formel.password .form-group-sm select[multiple],
+.form-group-sm .formel.select select[multiple],
+.formel.select .form-group-sm select[multiple],
+.form-group-sm select[multiple]#searchTerm,
+.form-group-sm select[multiple]#sort,
+.form-group-sm select[multiple]#filterBy {
   height: auto;
 }
 .form-group-sm .form-control-static {
@@ -3363,10 +3429,11 @@ select[multiple].input-sm,
   line-height: 1.5;
 }
 
-.input-lg, .input-group-lg > .form-control, #skild-content .input-group-lg > #username, #skild-content .input-group-lg > #login_password,
+.input-lg, .input-group-lg > .form-control, #skild-content .input-group-lg > #username, #skild-content .input-group-lg > #login_password, .formel.textbox .input-group-lg > input, .formel.textbox .input-group-lg > select, .formel.password .input-group-lg > input, .formel.password .input-group-lg > select, .formel.select .input-group-lg > input, .formel.select .input-group-lg > select, .input-group-lg > #searchTerm, .input-group-lg > #sort, .input-group-lg > #filterBy,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-#skild-content .input-group-lg > .input-group-btn > input[type="submit"] {
+#skild-content .input-group-lg > .input-group-btn > input[type="submit"],
+.input-group-lg > .input-group-btn > #searchEntries {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3374,42 +3441,60 @@ select[multiple].input-sm,
   border-radius: 6px;
 }
 
-select.input-lg, .input-group-lg > select.form-control, #skild-content .input-group-lg > select#username, #skild-content .input-group-lg > select#login_password,
+select.input-lg, .input-group-lg > select.form-control, #skild-content .input-group-lg > select#username, #skild-content .input-group-lg > select#login_password, .formel.textbox .input-group-lg > select, .formel.password .input-group-lg > select, .formel.select .input-group-lg > select, .input-group-lg > select#searchTerm, .input-group-lg > select#sort, .input-group-lg > select#filterBy,
 .input-group-lg > select.input-group-addon,
-.input-group-lg > .input-group-btn > select.btn {
+.input-group-lg > .input-group-btn > select.btn,
+.input-group-lg > .input-group-btn > select#searchEntries {
   height: 46px;
   line-height: 46px;
 }
 
-textarea.input-lg, .input-group-lg > textarea.form-control, #skild-content .input-group-lg > textarea#username, #skild-content .input-group-lg > textarea#login_password,
+textarea.input-lg, .input-group-lg > textarea.form-control, #skild-content .input-group-lg > textarea#username, #skild-content .input-group-lg > textarea#login_password, .input-group-lg > textarea#searchTerm, .input-group-lg > textarea#sort, .input-group-lg > textarea#filterBy,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
+.input-group-lg > .input-group-btn > textarea#searchEntries,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
 #skild-content .input-group-lg > select[multiple]#username,
 #skild-content .input-group-lg > select[multiple]#login_password,
+.formel.textbox .input-group-lg > select[multiple],
+.formel.password .input-group-lg > select[multiple],
+.formel.select .input-group-lg > select[multiple],
+.input-group-lg > select[multiple]#searchTerm,
+.input-group-lg > select[multiple]#sort,
+.input-group-lg > select[multiple]#filterBy,
 .input-group-lg > select[multiple].input-group-addon,
-.input-group-lg > .input-group-btn > select[multiple].btn {
+.input-group-lg > .input-group-btn > select[multiple].btn,
+.input-group-lg > .input-group-btn > select[multiple]#searchEntries {
   height: auto;
 }
 
-.form-group-lg .form-control, .form-group-lg #skild-content #username, #skild-content .form-group-lg #username, .form-group-lg #skild-content #login_password, #skild-content .form-group-lg #login_password {
+.form-group-lg .form-control, .form-group-lg #skild-content #username, #skild-content .form-group-lg #username, .form-group-lg #skild-content #login_password, #skild-content .form-group-lg #login_password, .form-group-lg .formel.textbox input, .formel.textbox .form-group-lg input, .form-group-lg .formel.textbox select, .formel.textbox .form-group-lg select, .form-group-lg .formel.password input, .formel.password .form-group-lg input, .form-group-lg .formel.password select, .formel.password .form-group-lg select, .form-group-lg .formel.select input, .formel.select .form-group-lg input, .form-group-lg .formel.select select, .formel.select .form-group-lg select, .form-group-lg #searchTerm, .form-group-lg #sort, .form-group-lg #filterBy {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333;
   border-radius: 6px;
 }
-.form-group-lg select.form-control, .form-group-lg #skild-content select#username, #skild-content .form-group-lg select#username, .form-group-lg #skild-content select#login_password, #skild-content .form-group-lg select#login_password {
+.form-group-lg select.form-control, .form-group-lg #skild-content select#username, #skild-content .form-group-lg select#username, .form-group-lg #skild-content select#login_password, #skild-content .form-group-lg select#login_password, .form-group-lg .formel.textbox select, .formel.textbox .form-group-lg select, .form-group-lg .formel.password select, .formel.password .form-group-lg select, .form-group-lg .formel.select select, .formel.select .form-group-lg select, .form-group-lg select#searchTerm, .form-group-lg select#sort, .form-group-lg select#filterBy {
   height: 46px;
   line-height: 46px;
 }
-.form-group-lg textarea.form-control, .form-group-lg #skild-content textarea#username, #skild-content .form-group-lg textarea#username, .form-group-lg #skild-content textarea#login_password, #skild-content .form-group-lg textarea#login_password,
+.form-group-lg textarea.form-control, .form-group-lg #skild-content textarea#username, #skild-content .form-group-lg textarea#username, .form-group-lg #skild-content textarea#login_password, #skild-content .form-group-lg textarea#login_password, .form-group-lg textarea#searchTerm, .form-group-lg textarea#sort, .form-group-lg textarea#filterBy,
 .form-group-lg select[multiple].form-control,
 .form-group-lg #skild-content select[multiple]#username,
 #skild-content .form-group-lg select[multiple]#username,
 .form-group-lg #skild-content select[multiple]#login_password,
-#skild-content .form-group-lg select[multiple]#login_password {
+#skild-content .form-group-lg select[multiple]#login_password,
+.form-group-lg .formel.textbox select[multiple],
+.formel.textbox .form-group-lg select[multiple],
+.form-group-lg .formel.password select[multiple],
+.formel.password .form-group-lg select[multiple],
+.form-group-lg .formel.select select[multiple],
+.formel.select .form-group-lg select[multiple],
+.form-group-lg select[multiple]#searchTerm,
+.form-group-lg select[multiple]#sort,
+.form-group-lg select[multiple]#filterBy {
   height: auto;
 }
 .form-group-lg .form-control-static {
@@ -3422,7 +3507,7 @@ select[multiple].input-lg,
 .has-feedback {
   position: relative;
 }
-.has-feedback .form-control, .has-feedback #skild-content #username, #skild-content .has-feedback #username, .has-feedback #skild-content #login_password, #skild-content .has-feedback #login_password {
+.has-feedback .form-control, .has-feedback #skild-content #username, #skild-content .has-feedback #username, .has-feedback #skild-content #login_password, #skild-content .has-feedback #login_password, .has-feedback .formel.textbox input, .formel.textbox .has-feedback input, .has-feedback .formel.textbox select, .formel.textbox .has-feedback select, .has-feedback .formel.password input, .formel.password .has-feedback input, .has-feedback .formel.password select, .formel.password .has-feedback select, .has-feedback .formel.select input, .formel.select .has-feedback input, .has-feedback .formel.select select, .formel.select .has-feedback select, .has-feedback #searchTerm, .has-feedback #sort, .has-feedback #filterBy {
   padding-right: 42.5px;
 }
 
@@ -3439,19 +3524,21 @@ select[multiple].input-lg,
   pointer-events: none;
 }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, #skild-content .input-group-lg > #username + .form-control-feedback, #skild-content .input-group-lg > #login_password + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, #skild-content .input-group-lg > #username + .form-control-feedback, #skild-content .input-group-lg > #login_password + .form-control-feedback, .formel.textbox .input-group-lg > input + .form-control-feedback, .formel.textbox .input-group-lg > select + .form-control-feedback, .formel.password .input-group-lg > input + .form-control-feedback, .formel.password .input-group-lg > select + .form-control-feedback, .formel.select .input-group-lg > input + .form-control-feedback, .formel.select .input-group-lg > select + .form-control-feedback, .input-group-lg > #searchTerm + .form-control-feedback, .input-group-lg > #sort + .form-control-feedback, .input-group-lg > #filterBy + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
-#skild-content .input-group-lg > .input-group-btn > input[type="submit"] + .form-control-feedback {
+#skild-content .input-group-lg > .input-group-btn > input[type="submit"] + .form-control-feedback,
+.input-group-lg > .input-group-btn > #searchEntries + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px;
 }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, #skild-content .input-group-sm > #username + .form-control-feedback, #skild-content .input-group-sm > #login_password + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, #skild-content .input-group-sm > #username + .form-control-feedback, #skild-content .input-group-sm > #login_password + .form-control-feedback, .formel.textbox .input-group-sm > input + .form-control-feedback, .formel.textbox .input-group-sm > select + .form-control-feedback, .formel.password .input-group-sm > input + .form-control-feedback, .formel.password .input-group-sm > select + .form-control-feedback, .formel.select .input-group-sm > input + .form-control-feedback, .formel.select .input-group-sm > select + .form-control-feedback, .input-group-sm > #searchTerm + .form-control-feedback, .input-group-sm > #sort + .form-control-feedback, .input-group-sm > #filterBy + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
-#skild-content .input-group-sm > .input-group-btn > input[type="submit"] + .form-control-feedback {
+#skild-content .input-group-sm > .input-group-btn > input[type="submit"] + .form-control-feedback,
+.input-group-sm > .input-group-btn > #searchEntries + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -3465,12 +3552,12 @@ select[multiple].input-lg,
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d;
 }
-.has-success .form-control, .has-success #skild-content #username, #skild-content .has-success #username, .has-success #skild-content #login_password, #skild-content .has-success #login_password {
+.has-success .form-control, .has-success #skild-content #username, #skild-content .has-success #username, .has-success #skild-content #login_password, #skild-content .has-success #login_password, .has-success .formel.textbox input, .formel.textbox .has-success input, .has-success .formel.textbox select, .formel.textbox .has-success select, .has-success .formel.password input, .formel.password .has-success input, .has-success .formel.password select, .formel.password .has-success select, .has-success .formel.select input, .formel.select .has-success input, .has-success .formel.select select, .formel.select .has-success select, .has-success #searchTerm, .has-success #sort, .has-success #filterBy {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-success .form-control:focus, .has-success #skild-content #username:focus, #skild-content .has-success #username:focus, .has-success #skild-content #login_password:focus, #skild-content .has-success #login_password:focus {
+.has-success .form-control:focus, .has-success #skild-content #username:focus, #skild-content .has-success #username:focus, .has-success #skild-content #login_password:focus, #skild-content .has-success #login_password:focus, .has-success .formel.textbox input:focus, .formel.textbox .has-success input:focus, .has-success .formel.textbox select:focus, .formel.textbox .has-success select:focus, .has-success .formel.password input:focus, .formel.password .has-success input:focus, .has-success .formel.password select:focus, .formel.password .has-success select:focus, .has-success .formel.select input:focus, .formel.select .has-success input:focus, .has-success .formel.select select:focus, .formel.select .has-success select:focus, .has-success #searchTerm:focus, .has-success #sort:focus, .has-success #filterBy:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -3492,12 +3579,12 @@ select[multiple].input-lg,
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b;
 }
-.has-warning .form-control, .has-warning #skild-content #username, #skild-content .has-warning #username, .has-warning #skild-content #login_password, #skild-content .has-warning #login_password {
+.has-warning .form-control, .has-warning #skild-content #username, #skild-content .has-warning #username, .has-warning #skild-content #login_password, #skild-content .has-warning #login_password, .has-warning .formel.textbox input, .formel.textbox .has-warning input, .has-warning .formel.textbox select, .formel.textbox .has-warning select, .has-warning .formel.password input, .formel.password .has-warning input, .has-warning .formel.password select, .formel.password .has-warning select, .has-warning .formel.select input, .formel.select .has-warning input, .has-warning .formel.select select, .formel.select .has-warning select, .has-warning #searchTerm, .has-warning #sort, .has-warning #filterBy {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-warning .form-control:focus, .has-warning #skild-content #username:focus, #skild-content .has-warning #username:focus, .has-warning #skild-content #login_password:focus, #skild-content .has-warning #login_password:focus {
+.has-warning .form-control:focus, .has-warning #skild-content #username:focus, #skild-content .has-warning #username:focus, .has-warning #skild-content #login_password:focus, #skild-content .has-warning #login_password:focus, .has-warning .formel.textbox input:focus, .formel.textbox .has-warning input:focus, .has-warning .formel.textbox select:focus, .formel.textbox .has-warning select:focus, .has-warning .formel.password input:focus, .formel.password .has-warning input:focus, .has-warning .formel.password select:focus, .formel.password .has-warning select:focus, .has-warning .formel.select input:focus, .formel.select .has-warning input:focus, .has-warning .formel.select select:focus, .formel.select .has-warning select:focus, .has-warning #searchTerm:focus, .has-warning #sort:focus, .has-warning #filterBy:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -3519,12 +3606,12 @@ select[multiple].input-lg,
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #a94442;
 }
-.has-error .form-control, .has-error #skild-content #username, #skild-content .has-error #username, .has-error #skild-content #login_password, #skild-content .has-error #login_password {
+.has-error .form-control, .has-error #skild-content #username, #skild-content .has-error #username, .has-error #skild-content #login_password, #skild-content .has-error #login_password, .has-error .formel.textbox input, .formel.textbox .has-error input, .has-error .formel.textbox select, .formel.textbox .has-error select, .has-error .formel.password input, .formel.password .has-error input, .has-error .formel.password select, .formel.password .has-error select, .has-error .formel.select input, .formel.select .has-error input, .has-error .formel.select select, .formel.select .has-error select, .has-error #searchTerm, .has-error #sort, .has-error #filterBy {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-error .form-control:focus, .has-error #skild-content #username:focus, #skild-content .has-error #username:focus, .has-error #skild-content #login_password:focus, #skild-content .has-error #login_password:focus {
+.has-error .form-control:focus, .has-error #skild-content #username:focus, #skild-content .has-error #username:focus, .has-error #skild-content #login_password:focus, #skild-content .has-error #login_password:focus, .has-error .formel.textbox input:focus, .formel.textbox .has-error input:focus, .has-error .formel.textbox select:focus, .formel.textbox .has-error select:focus, .has-error .formel.password input:focus, .formel.password .has-error input:focus, .has-error .formel.password select:focus, .formel.password .has-error select:focus, .has-error .formel.select input:focus, .formel.select .has-error input:focus, .has-error .formel.select select:focus, .formel.select .has-error select:focus, .has-error #searchTerm:focus, .has-error #sort:focus, .has-error #filterBy:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -3558,7 +3645,7 @@ select[multiple].input-lg,
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control, .form-inline #skild-content #username, #skild-content .form-inline #username, .form-inline #skild-content #login_password, #skild-content .form-inline #login_password {
+  .form-inline .form-control, .form-inline #skild-content #username, #skild-content .form-inline #username, .form-inline #skild-content #login_password, #skild-content .form-inline #login_password, .form-inline .formel.textbox input, .formel.textbox .form-inline input, .form-inline .formel.textbox select, .formel.textbox .form-inline select, .form-inline .formel.password input, .formel.password .form-inline input, .form-inline .formel.password select, .formel.password .form-inline select, .form-inline .formel.select input, .formel.select .form-inline input, .form-inline .formel.select select, .formel.select .form-inline select, .form-inline #searchTerm, .form-inline #sort, .form-inline #filterBy {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -3576,10 +3663,25 @@ select[multiple].input-lg,
   .form-inline .input-group #skild-content #username,
   #skild-content .form-inline .input-group #username,
   .form-inline .input-group #skild-content #login_password,
-  #skild-content .form-inline .input-group #login_password {
+  #skild-content .form-inline .input-group #login_password,
+  .form-inline .input-group .formel.textbox input,
+  .formel.textbox .form-inline .input-group input,
+  .form-inline .input-group .formel.textbox select,
+  .formel.textbox .form-inline .input-group select,
+  .form-inline .input-group .formel.password input,
+  .formel.password .form-inline .input-group input,
+  .form-inline .input-group .formel.password select,
+  .formel.password .form-inline .input-group select,
+  .form-inline .input-group .formel.select input,
+  .formel.select .form-inline .input-group input,
+  .form-inline .input-group .formel.select select,
+  .formel.select .form-inline .input-group select,
+  .form-inline .input-group #searchTerm,
+  .form-inline .input-group #sort,
+  .form-inline .input-group #filterBy {
     width: auto;
   }
-  .form-inline .input-group > .form-control, .form-inline #skild-content .input-group > #username, #skild-content .form-inline .input-group > #username, .form-inline #skild-content .input-group > #login_password, #skild-content .form-inline .input-group > #login_password {
+  .form-inline .input-group > .form-control, .form-inline #skild-content .input-group > #username, #skild-content .form-inline .input-group > #username, .form-inline #skild-content .input-group > #login_password, #skild-content .form-inline .input-group > #login_password, .form-inline .formel.textbox .input-group > input, .formel.textbox .form-inline .input-group > input, .form-inline .formel.textbox .input-group > select, .formel.textbox .form-inline .input-group > select, .form-inline .formel.password .input-group > input, .formel.password .form-inline .input-group > input, .form-inline .formel.password .input-group > select, .formel.password .form-inline .input-group > select, .form-inline .formel.select .input-group > input, .formel.select .form-inline .input-group > input, .form-inline .formel.select .input-group > select, .formel.select .form-inline .input-group > select, .form-inline .input-group > #searchTerm, .form-inline .input-group > #sort, .form-inline .input-group > #filterBy {
     width: 100%;
   }
   .form-inline .control-label {
@@ -3651,7 +3753,7 @@ select[multiple].input-lg,
   }
 }
 
-.btn, #skild-content input[type="submit"] {
+.btn, #skild-content input[type="submit"], #searchEntries {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3671,22 +3773,22 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, #skild-content input[type="submit"]:focus, .btn.focus, #skild-content input.focus[type="submit"], .btn:active:focus, #skild-content input[type="submit"]:active:focus, .btn:active.focus, #skild-content input[type="submit"]:active.focus, .btn.active:focus, #skild-content input.active[type="submit"]:focus, .btn.active.focus, #skild-content input.active.focus[type="submit"] {
+.btn:focus, #skild-content input[type="submit"]:focus, #searchEntries:focus, .btn.focus, #skild-content input.focus[type="submit"], .focus#searchEntries, .btn:active:focus, #skild-content input[type="submit"]:active:focus, #searchEntries:active:focus, .btn:active.focus, #skild-content input[type="submit"]:active.focus, #searchEntries:active.focus, .btn.active:focus, #skild-content input.active[type="submit"]:focus, .active#searchEntries:focus, .btn.active.focus, #skild-content input.active.focus[type="submit"], .active.focus#searchEntries {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, #skild-content input[type="submit"]:hover, .btn:focus, #skild-content input[type="submit"]:focus, .btn.focus, #skild-content input.focus[type="submit"] {
+.btn:hover, #skild-content input[type="submit"]:hover, #searchEntries:hover, .btn:focus, #skild-content input[type="submit"]:focus, #searchEntries:focus, .btn.focus, #skild-content input.focus[type="submit"], .focus#searchEntries {
   color: #333333;
   text-decoration: none;
 }
-.btn:active, #skild-content input[type="submit"]:active, .btn.active, #skild-content input.active[type="submit"] {
+.btn:active, #skild-content input[type="submit"]:active, #searchEntries:active, .btn.active, #skild-content input.active[type="submit"], .active#searchEntries {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, #skild-content input.disabled[type="submit"], .btn[disabled], #skild-content input[disabled][type="submit"], fieldset[disabled] .btn, fieldset[disabled] #skild-content input[type="submit"], #skild-content fieldset[disabled] input[type="submit"] {
+.btn.disabled, #skild-content input.disabled[type="submit"], .disabled#searchEntries, .btn[disabled], #skild-content input[disabled][type="submit"], [disabled]#searchEntries, fieldset[disabled] .btn, fieldset[disabled] #skild-content input[type="submit"], #skild-content fieldset[disabled] input[type="submit"], fieldset[disabled] #searchEntries {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -3717,24 +3819,24 @@ select[multiple].input-lg,
   background-color: #333333;
 }
 
-.btn-primary, #skild-content input[type="submit"] {
+.btn-primary, #skild-content input[type="submit"], #searchEntries {
   color: white;
   background-color: #f74326;
   border-color: #f62e0d;
 }
-.btn-primary:hover, #skild-content input[type="submit"]:hover, .btn-primary:focus, #skild-content input[type="submit"]:focus, .btn-primary.focus, #skild-content input.focus[type="submit"], .btn-primary:active, #skild-content input[type="submit"]:active, .btn-primary.active, #skild-content input.active[type="submit"], .open > .btn-primary.dropdown-toggle, #skild-content .open > input.dropdown-toggle[type="submit"] {
+.btn-primary:hover, #skild-content input[type="submit"]:hover, #searchEntries:hover, .btn-primary:focus, #skild-content input[type="submit"]:focus, #searchEntries:focus, .btn-primary.focus, #skild-content input.focus[type="submit"], .focus#searchEntries, .btn-primary:active, #skild-content input[type="submit"]:active, #searchEntries:active, .btn-primary.active, #skild-content input.active[type="submit"], .active#searchEntries, .open > .btn-primary.dropdown-toggle, #skild-content .open > input.dropdown-toggle[type="submit"], .open > .dropdown-toggle#searchEntries {
   color: white;
   background-color: #e22608;
   border-color: #bf2107;
 }
-.btn-primary:active, #skild-content input[type="submit"]:active, .btn-primary.active, #skild-content input.active[type="submit"], .open > .btn-primary.dropdown-toggle, #skild-content .open > input.dropdown-toggle[type="submit"] {
+.btn-primary:active, #skild-content input[type="submit"]:active, #searchEntries:active, .btn-primary.active, #skild-content input.active[type="submit"], .active#searchEntries, .open > .btn-primary.dropdown-toggle, #skild-content .open > input.dropdown-toggle[type="submit"], .open > .dropdown-toggle#searchEntries {
   background-image: none;
 }
-.btn-primary.disabled, #skild-content input.disabled[type="submit"], .btn-primary.disabled:hover, #skild-content input.disabled[type="submit"]:hover, .btn-primary.disabled:focus, #skild-content input.disabled[type="submit"]:focus, .btn-primary.disabled.focus, #skild-content input.disabled.focus[type="submit"], .btn-primary.disabled:active, #skild-content input.disabled[type="submit"]:active, .btn-primary.disabled.active, #skild-content input.disabled.active[type="submit"], .btn-primary[disabled], #skild-content input[disabled][type="submit"], .btn-primary[disabled]:hover, #skild-content input[disabled][type="submit"]:hover, .btn-primary[disabled]:focus, #skild-content input[disabled][type="submit"]:focus, .btn-primary[disabled].focus, #skild-content input[disabled].focus[type="submit"], .btn-primary[disabled]:active, #skild-content input[disabled][type="submit"]:active, .btn-primary[disabled].active, #skild-content input[disabled].active[type="submit"], fieldset[disabled] .btn-primary, fieldset[disabled] #skild-content input[type="submit"], #skild-content fieldset[disabled] input[type="submit"], fieldset[disabled] .btn-primary:hover, fieldset[disabled] #skild-content input[type="submit"]:hover, #skild-content fieldset[disabled] input[type="submit"]:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] #skild-content input[type="submit"]:focus, #skild-content fieldset[disabled] input[type="submit"]:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] #skild-content input.focus[type="submit"], #skild-content fieldset[disabled] input.focus[type="submit"], fieldset[disabled] .btn-primary:active, fieldset[disabled] #skild-content input[type="submit"]:active, #skild-content fieldset[disabled] input[type="submit"]:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] #skild-content input.active[type="submit"], #skild-content fieldset[disabled] input.active[type="submit"] {
+.btn-primary.disabled, #skild-content input.disabled[type="submit"], .disabled#searchEntries, .btn-primary.disabled:hover, #skild-content input.disabled[type="submit"]:hover, .disabled#searchEntries:hover, .btn-primary.disabled:focus, #skild-content input.disabled[type="submit"]:focus, .disabled#searchEntries:focus, .btn-primary.disabled.focus, #skild-content input.disabled.focus[type="submit"], .disabled.focus#searchEntries, .btn-primary.disabled:active, #skild-content input.disabled[type="submit"]:active, .disabled#searchEntries:active, .btn-primary.disabled.active, #skild-content input.disabled.active[type="submit"], .disabled.active#searchEntries, .btn-primary[disabled], #skild-content input[disabled][type="submit"], [disabled]#searchEntries, .btn-primary[disabled]:hover, #skild-content input[disabled][type="submit"]:hover, [disabled]#searchEntries:hover, .btn-primary[disabled]:focus, #skild-content input[disabled][type="submit"]:focus, [disabled]#searchEntries:focus, .btn-primary[disabled].focus, #skild-content input[disabled].focus[type="submit"], [disabled].focus#searchEntries, .btn-primary[disabled]:active, #skild-content input[disabled][type="submit"]:active, [disabled]#searchEntries:active, .btn-primary[disabled].active, #skild-content input[disabled].active[type="submit"], [disabled].active#searchEntries, fieldset[disabled] .btn-primary, fieldset[disabled] #skild-content input[type="submit"], #skild-content fieldset[disabled] input[type="submit"], fieldset[disabled] #searchEntries, fieldset[disabled] .btn-primary:hover, fieldset[disabled] #skild-content input[type="submit"]:hover, #skild-content fieldset[disabled] input[type="submit"]:hover, fieldset[disabled] #searchEntries:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] #skild-content input[type="submit"]:focus, #skild-content fieldset[disabled] input[type="submit"]:focus, fieldset[disabled] #searchEntries:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] #skild-content input.focus[type="submit"], #skild-content fieldset[disabled] input.focus[type="submit"], fieldset[disabled] .focus#searchEntries, fieldset[disabled] .btn-primary:active, fieldset[disabled] #skild-content input[type="submit"]:active, #skild-content fieldset[disabled] input[type="submit"]:active, fieldset[disabled] #searchEntries:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] #skild-content input.active[type="submit"], #skild-content fieldset[disabled] input.active[type="submit"], fieldset[disabled] .active#searchEntries {
   background-color: #f74326;
   border-color: #f62e0d;
 }
-.btn-primary .badge, #skild-content input[type="submit"] .badge {
+.btn-primary .badge, #skild-content input[type="submit"] .badge, #searchEntries .badge {
   color: #f74326;
   background-color: white;
 }
@@ -3850,21 +3952,21 @@ select[multiple].input-lg,
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, #skild-content .btn-group-lg > input[type="submit"] {
+.btn-lg, .btn-group-lg > .btn, #skild-content .btn-group-lg > input[type="submit"], .btn-group-lg > #searchEntries {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, #skild-content .btn-group-sm > input[type="submit"] {
+.btn-sm, .btn-group-sm > .btn, #skild-content .btn-group-sm > input[type="submit"], .btn-group-sm > #searchEntries {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn, #skild-content .btn-group-xs > input[type="submit"] {
+.btn-xs, .btn-group-xs > .btn, #skild-content .btn-group-xs > input[type="submit"], .btn-group-xs > #searchEntries {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -4079,31 +4181,38 @@ tbody.collapse.in {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, #skild-content .btn-group > input[type="submit"],
+.btn-group > .btn, #skild-content .btn-group > input[type="submit"], .btn-group > #searchEntries,
 .btn-group-vertical > .btn,
-#skild-content .btn-group-vertical > input[type="submit"] {
+#skild-content .btn-group-vertical > input[type="submit"],
+.btn-group-vertical > #searchEntries {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, #skild-content .btn-group > input[type="submit"]:hover, .btn-group > .btn:focus, #skild-content .btn-group > input[type="submit"]:focus, .btn-group > .btn:active, #skild-content .btn-group > input[type="submit"]:active, .btn-group > .btn.active, #skild-content .btn-group > input.active[type="submit"],
+.btn-group > .btn:hover, #skild-content .btn-group > input[type="submit"]:hover, .btn-group > #searchEntries:hover, .btn-group > .btn:focus, #skild-content .btn-group > input[type="submit"]:focus, .btn-group > #searchEntries:focus, .btn-group > .btn:active, #skild-content .btn-group > input[type="submit"]:active, .btn-group > #searchEntries:active, .btn-group > .btn.active, #skild-content .btn-group > input.active[type="submit"], .btn-group > .active#searchEntries,
 .btn-group-vertical > .btn:hover,
 #skild-content .btn-group-vertical > input[type="submit"]:hover,
+.btn-group-vertical > #searchEntries:hover,
 .btn-group-vertical > .btn:focus,
 #skild-content .btn-group-vertical > input[type="submit"]:focus,
+.btn-group-vertical > #searchEntries:focus,
 .btn-group-vertical > .btn:active,
 #skild-content .btn-group-vertical > input[type="submit"]:active,
+.btn-group-vertical > #searchEntries:active,
 .btn-group-vertical > .btn.active,
-#skild-content .btn-group-vertical > input.active[type="submit"] {
+#skild-content .btn-group-vertical > input.active[type="submit"],
+.btn-group-vertical > .active#searchEntries {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group #skild-content input[type="submit"] + .btn, #skild-content .btn-group input[type="submit"] + .btn, .btn-group #skild-content .btn + input[type="submit"], #skild-content .btn-group .btn + input[type="submit"], .btn-group #skild-content input[type="submit"] + input[type="submit"], #skild-content .btn-group input[type="submit"] + input[type="submit"],
+.btn-group .btn + .btn, .btn-group #skild-content input[type="submit"] + .btn, #skild-content .btn-group input[type="submit"] + .btn, .btn-group #searchEntries + .btn, .btn-group #skild-content .btn + input[type="submit"], #skild-content .btn-group .btn + input[type="submit"], .btn-group #skild-content input[type="submit"] + input[type="submit"], #skild-content .btn-group input[type="submit"] + input[type="submit"], .btn-group #skild-content #searchEntries + input[type="submit"], #skild-content .btn-group #searchEntries + input[type="submit"], .btn-group .btn + #searchEntries, .btn-group #skild-content input[type="submit"] + #searchEntries, #skild-content .btn-group input[type="submit"] + #searchEntries, .btn-group #searchEntries + #searchEntries,
 .btn-group .btn + .btn-group,
 .btn-group #skild-content input[type="submit"] + .btn-group,
 #skild-content .btn-group input[type="submit"] + .btn-group,
+.btn-group #searchEntries + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group #skild-content .btn-group + input[type="submit"],
 #skild-content .btn-group .btn-group + input[type="submit"],
+.btn-group .btn-group + #searchEntries,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -4122,25 +4231,25 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn, #skild-content .btn-toolbar > input[type="submit"],
+.btn-toolbar > .btn, #skild-content .btn-toolbar > input[type="submit"], .btn-toolbar > #searchEntries,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #skild-content .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #skild-content .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > #searchEntries:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, #skild-content .btn-group > input[type="submit"]:first-child {
+.btn-group > .btn:first-child, #skild-content .btn-group > input[type="submit"]:first-child, .btn-group > #searchEntries:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #skild-content .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #skild-content .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > #searchEntries:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), #skild-content .btn-group > input[type="submit"]:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), #skild-content .btn-group > input[type="submit"]:last-child:not(:first-child), .btn-group > #searchEntries:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4150,17 +4259,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #skild-content .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"] {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #skild-content .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group > .btn-group:not(:first-child):not(:last-child) > #searchEntries {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #skild-content .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #skild-content .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > #searchEntries:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #skild-content .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #skild-content .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) > #searchEntries:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4170,12 +4279,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, #skild-content .btn-group > input[type="submit"] + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, #skild-content .btn-group > input[type="submit"] + .dropdown-toggle, .btn-group > #searchEntries + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, #skild-content .btn-group-lg.btn-group > input[type="submit"] + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, #skild-content .btn-group-lg.btn-group > input[type="submit"] + .dropdown-toggle, .btn-group-lg.btn-group > #searchEntries + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4189,23 +4298,24 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, #skild-content input[type="submit"] .caret {
+.btn .caret, #skild-content input[type="submit"] .caret, #searchEntries .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, #skild-content .btn-group-lg > input[type="submit"] .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, #skild-content .btn-group-lg > input[type="submit"] .caret, .btn-group-lg > #searchEntries .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup #skild-content .btn-group-lg > input[type="submit"] .caret, #skild-content .dropup .btn-group-lg > input[type="submit"] .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup #skild-content .btn-group-lg > input[type="submit"] .caret, #skild-content .dropup .btn-group-lg > input[type="submit"] .caret, .dropup .btn-group-lg > #searchEntries .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, #skild-content .btn-group-vertical > input[type="submit"],
+.btn-group-vertical > .btn, #skild-content .btn-group-vertical > input[type="submit"], .btn-group-vertical > #searchEntries,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
-#skild-content .btn-group-vertical > .btn-group > input[type="submit"] {
+#skild-content .btn-group-vertical > .btn-group > input[type="submit"],
+.btn-group-vertical > .btn-group > #searchEntries {
   display: block;
   float: none;
   width: 100%;
@@ -4218,44 +4328,46 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, #skild-content .btn-group-vertical > .btn-group > input[type="submit"] {
+.btn-group-vertical > .btn-group > .btn, #skild-content .btn-group-vertical > .btn-group > input[type="submit"], .btn-group-vertical > .btn-group > #searchEntries {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, #skild-content .btn-group-vertical > input[type="submit"] + .btn, #skild-content .btn-group-vertical > .btn + input[type="submit"], #skild-content .btn-group-vertical > input[type="submit"] + input[type="submit"],
+.btn-group-vertical > .btn + .btn, #skild-content .btn-group-vertical > input[type="submit"] + .btn, .btn-group-vertical > #searchEntries + .btn, #skild-content .btn-group-vertical > .btn + input[type="submit"], #skild-content .btn-group-vertical > input[type="submit"] + input[type="submit"], #skild-content .btn-group-vertical > #searchEntries + input[type="submit"], .btn-group-vertical > .btn + #searchEntries, #skild-content .btn-group-vertical > input[type="submit"] + #searchEntries, .btn-group-vertical > #searchEntries + #searchEntries,
 .btn-group-vertical > .btn + .btn-group,
 #skild-content .btn-group-vertical > input[type="submit"] + .btn-group,
+.btn-group-vertical > #searchEntries + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 #skild-content .btn-group-vertical > .btn-group + input[type="submit"],
+.btn-group-vertical > .btn-group + #searchEntries,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), #skild-content .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), #skild-content .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), .btn-group-vertical > #searchEntries:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), #skild-content .btn-group-vertical > input[type="submit"]:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), #skild-content .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), .btn-group-vertical > #searchEntries:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), #skild-content .btn-group-vertical > input[type="submit"]:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), #skild-content .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), .btn-group-vertical > #searchEntries:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #skild-content .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"] {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #skild-content .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #searchEntries {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #skild-content .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #skild-content .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > #searchEntries:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #skild-content .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #skild-content .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > #searchEntries:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4266,26 +4378,29 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn, #skild-content .btn-group-justified > input[type="submit"],
+.btn-group-justified > .btn, #skild-content .btn-group-justified > input[type="submit"], .btn-group-justified > #searchEntries,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group #skild-content input[type="submit"], #skild-content .btn-group-justified > .btn-group input[type="submit"] {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group #skild-content input[type="submit"], #skild-content .btn-group-justified > .btn-group input[type="submit"], .btn-group-justified > .btn-group #searchEntries {
   width: 100%;
 }
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], #skild-content [data-toggle="buttons"] > input[type="submit"] input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], #skild-content [data-toggle="buttons"] > input[type="submit"] input[type="radio"], [data-toggle="buttons"] > #searchEntries input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
 #skild-content [data-toggle="buttons"] > input[type="submit"] input[type="checkbox"],
+[data-toggle="buttons"] > #searchEntries input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 #skild-content [data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="radio"],
+[data-toggle="buttons"] > .btn-group > #searchEntries input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
-#skild-content [data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="checkbox"] {
+#skild-content [data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > #searchEntries input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -4301,7 +4416,7 @@ tbody.collapse.in {
   padding-left: 0;
   padding-right: 0;
 }
-.input-group .form-control, .input-group #skild-content #username, #skild-content .input-group #username, .input-group #skild-content #login_password, #skild-content .input-group #login_password {
+.input-group .form-control, .input-group #skild-content #username, #skild-content .input-group #username, .input-group #skild-content #login_password, #skild-content .input-group #login_password, .input-group .formel.textbox input, .formel.textbox .input-group input, .input-group .formel.textbox select, .formel.textbox .input-group select, .input-group .formel.password input, .formel.password .input-group input, .input-group .formel.password select, .formel.password .input-group select, .input-group .formel.select input, .formel.select .input-group input, .input-group .formel.select select, .formel.select .input-group select, .input-group #searchTerm, .input-group #sort, .input-group #filterBy {
   position: relative;
   z-index: 2;
   float: left;
@@ -4315,7 +4430,22 @@ tbody.collapse.in {
 .input-group #skild-content #username,
 #skild-content .input-group #username,
 .input-group #skild-content #login_password,
-#skild-content .input-group #login_password {
+#skild-content .input-group #login_password,
+.input-group .formel.textbox input,
+.formel.textbox .input-group input,
+.input-group .formel.textbox select,
+.formel.textbox .input-group select,
+.input-group .formel.password input,
+.formel.password .input-group input,
+.input-group .formel.password select,
+.formel.password .input-group select,
+.input-group .formel.select input,
+.formel.select .input-group input,
+.input-group .formel.select select,
+.formel.select .input-group select,
+.input-group #searchTerm,
+.input-group #sort,
+.input-group #filterBy {
   display: table-cell;
 }
 .input-group-addon:not(:first-child):not(:last-child),
@@ -4324,7 +4454,22 @@ tbody.collapse.in {
 .input-group #skild-content #username:not(:first-child):not(:last-child),
 #skild-content .input-group #username:not(:first-child):not(:last-child),
 .input-group #skild-content #login_password:not(:first-child):not(:last-child),
-#skild-content .input-group #login_password:not(:first-child):not(:last-child) {
+#skild-content .input-group #login_password:not(:first-child):not(:last-child),
+.input-group .formel.textbox input:not(:first-child):not(:last-child),
+.formel.textbox .input-group input:not(:first-child):not(:last-child),
+.input-group .formel.textbox select:not(:first-child):not(:last-child),
+.formel.textbox .input-group select:not(:first-child):not(:last-child),
+.input-group .formel.password input:not(:first-child):not(:last-child),
+.formel.password .input-group input:not(:first-child):not(:last-child),
+.input-group .formel.password select:not(:first-child):not(:last-child),
+.formel.password .input-group select:not(:first-child):not(:last-child),
+.input-group .formel.select input:not(:first-child):not(:last-child),
+.formel.select .input-group input:not(:first-child):not(:last-child),
+.input-group .formel.select select:not(:first-child):not(:last-child),
+.formel.select .input-group select:not(:first-child):not(:last-child),
+.input-group #searchTerm:not(:first-child):not(:last-child),
+.input-group #sort:not(:first-child):not(:last-child),
+.input-group #filterBy:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4346,18 +4491,20 @@ tbody.collapse.in {
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
-.input-group-addon.input-sm, #skild-content .input-group-sm > .input-group-addon#username, #skild-content .input-group-sm > .input-group-addon#login_password,
+.input-group-addon.input-sm, #skild-content .input-group-sm > .input-group-addon#username, #skild-content .input-group-sm > .input-group-addon#login_password, .formel.textbox .input-group-sm > input.input-group-addon, .formel.textbox .input-group-sm > select.input-group-addon, .formel.password .input-group-sm > input.input-group-addon, .formel.password .input-group-sm > select.input-group-addon, .formel.select .input-group-sm > input.input-group-addon, .formel.select .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-addon#searchTerm, .input-group-sm > .input-group-addon#sort, .input-group-sm > .input-group-addon#filterBy,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
-#skild-content .input-group-sm > .input-group-btn > input.input-group-addon[type="submit"] {
+#skild-content .input-group-sm > .input-group-btn > input.input-group-addon[type="submit"],
+.input-group-sm > .input-group-btn > .input-group-addon#searchEntries {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
 }
-.input-group-addon.input-lg, #skild-content .input-group-lg > .input-group-addon#username, #skild-content .input-group-lg > .input-group-addon#login_password,
+.input-group-addon.input-lg, #skild-content .input-group-lg > .input-group-addon#username, #skild-content .input-group-lg > .input-group-addon#login_password, .formel.textbox .input-group-lg > input.input-group-addon, .formel.textbox .input-group-lg > select.input-group-addon, .formel.password .input-group-lg > input.input-group-addon, .formel.password .input-group-lg > select.input-group-addon, .formel.select .input-group-lg > input.input-group-addon, .formel.select .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-addon#searchTerm, .input-group-lg > .input-group-addon#sort, .input-group-lg > .input-group-addon#filterBy,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
-#skild-content .input-group-lg > .input-group-btn > input.input-group-addon[type="submit"] {
+#skild-content .input-group-lg > .input-group-btn > input.input-group-addon[type="submit"],
+.input-group-lg > .input-group-btn > .input-group-addon#searchEntries {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -4367,17 +4514,21 @@ tbody.collapse.in {
   margin-top: 0;
 }
 
-.input-group .form-control:first-child, .input-group #skild-content #username:first-child, #skild-content .input-group #username:first-child, .input-group #skild-content #login_password:first-child, #skild-content .input-group #login_password:first-child,
+.input-group .form-control:first-child, .input-group #skild-content #username:first-child, #skild-content .input-group #username:first-child, .input-group #skild-content #login_password:first-child, #skild-content .input-group #login_password:first-child, .input-group .formel.textbox input:first-child, .formel.textbox .input-group input:first-child, .input-group .formel.textbox select:first-child, .formel.textbox .input-group select:first-child, .input-group .formel.password input:first-child, .formel.password .input-group input:first-child, .input-group .formel.password select:first-child, .formel.password .input-group select:first-child, .input-group .formel.select input:first-child, .formel.select .input-group input:first-child, .input-group .formel.select select:first-child, .formel.select .input-group select:first-child, .input-group #searchTerm:first-child, .input-group #sort:first-child, .input-group #filterBy:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 #skild-content .input-group-btn:first-child > input[type="submit"],
+.input-group-btn:first-child > #searchEntries,
 .input-group-btn:first-child > .btn-group > .btn,
 #skild-content .input-group-btn:first-child > .btn-group > input[type="submit"],
+.input-group-btn:first-child > .btn-group > #searchEntries,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 #skild-content .input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > #searchEntries:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
-#skild-content .input-group-btn:last-child > .btn-group:not(:last-child) > input[type="submit"] {
+#skild-content .input-group-btn:last-child > .btn-group:not(:last-child) > input[type="submit"],
+.input-group-btn:last-child > .btn-group:not(:last-child) > #searchEntries {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4386,17 +4537,21 @@ tbody.collapse.in {
   border-right: 0;
 }
 
-.input-group .form-control:last-child, .input-group #skild-content #username:last-child, #skild-content .input-group #username:last-child, .input-group #skild-content #login_password:last-child, #skild-content .input-group #login_password:last-child,
+.input-group .form-control:last-child, .input-group #skild-content #username:last-child, #skild-content .input-group #username:last-child, .input-group #skild-content #login_password:last-child, #skild-content .input-group #login_password:last-child, .input-group .formel.textbox input:last-child, .formel.textbox .input-group input:last-child, .input-group .formel.textbox select:last-child, .formel.textbox .input-group select:last-child, .input-group .formel.password input:last-child, .formel.password .input-group input:last-child, .input-group .formel.password select:last-child, .formel.password .input-group select:last-child, .input-group .formel.select input:last-child, .formel.select .input-group input:last-child, .input-group .formel.select select:last-child, .formel.select .input-group select:last-child, .input-group #searchTerm:last-child, .input-group #sort:last-child, .input-group #filterBy:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 #skild-content .input-group-btn:last-child > input[type="submit"],
+.input-group-btn:last-child > #searchEntries,
 .input-group-btn:last-child > .btn-group > .btn,
 #skild-content .input-group-btn:last-child > .btn-group > input[type="submit"],
+.input-group-btn:last-child > .btn-group > #searchEntries,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
 #skild-content .input-group-btn:first-child > input[type="submit"]:not(:first-child),
+.input-group-btn:first-child > #searchEntries:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
-#skild-content .input-group-btn:first-child > .btn-group:not(:first-child) > input[type="submit"] {
+#skild-content .input-group-btn:first-child > .btn-group:not(:first-child) > input[type="submit"],
+.input-group-btn:first-child > .btn-group:not(:first-child) > #searchEntries {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4410,20 +4565,20 @@ tbody.collapse.in {
   font-size: 0;
   white-space: nowrap;
 }
-.input-group-btn > .btn, #skild-content .input-group-btn > input[type="submit"] {
+.input-group-btn > .btn, #skild-content .input-group-btn > input[type="submit"], .input-group-btn > #searchEntries {
   position: relative;
 }
-.input-group-btn > .btn + .btn, #skild-content .input-group-btn > input[type="submit"] + .btn, #skild-content .input-group-btn > .btn + input[type="submit"], #skild-content .input-group-btn > input[type="submit"] + input[type="submit"] {
+.input-group-btn > .btn + .btn, #skild-content .input-group-btn > input[type="submit"] + .btn, .input-group-btn > #searchEntries + .btn, #skild-content .input-group-btn > .btn + input[type="submit"], #skild-content .input-group-btn > input[type="submit"] + input[type="submit"], #skild-content .input-group-btn > #searchEntries + input[type="submit"], .input-group-btn > .btn + #searchEntries, #skild-content .input-group-btn > input[type="submit"] + #searchEntries, .input-group-btn > #searchEntries + #searchEntries {
   margin-left: -1px;
 }
-.input-group-btn > .btn:hover, #skild-content .input-group-btn > input[type="submit"]:hover, .input-group-btn > .btn:focus, #skild-content .input-group-btn > input[type="submit"]:focus, .input-group-btn > .btn:active, #skild-content .input-group-btn > input[type="submit"]:active {
+.input-group-btn > .btn:hover, #skild-content .input-group-btn > input[type="submit"]:hover, .input-group-btn > #searchEntries:hover, .input-group-btn > .btn:focus, #skild-content .input-group-btn > input[type="submit"]:focus, .input-group-btn > #searchEntries:focus, .input-group-btn > .btn:active, #skild-content .input-group-btn > input[type="submit"]:active, .input-group-btn > #searchEntries:active {
   z-index: 2;
 }
-.input-group-btn:first-child > .btn, #skild-content .input-group-btn:first-child > input[type="submit"],
+.input-group-btn:first-child > .btn, #skild-content .input-group-btn:first-child > input[type="submit"], .input-group-btn:first-child > #searchEntries,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, #skild-content .input-group-btn:last-child > input[type="submit"],
+.input-group-btn:last-child > .btn, #skild-content .input-group-btn:last-child > input[type="submit"], .input-group-btn:last-child > #searchEntries,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
@@ -4835,7 +4990,7 @@ tbody.collapse.in {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .navbar-form .form-control, .navbar-form #skild-content #username, #skild-content .navbar-form #username, .navbar-form #skild-content #login_password, #skild-content .navbar-form #login_password {
+  .navbar-form .form-control, .navbar-form #skild-content #username, #skild-content .navbar-form #username, .navbar-form #skild-content #login_password, #skild-content .navbar-form #login_password, .navbar-form .formel.textbox input, .formel.textbox .navbar-form input, .navbar-form .formel.textbox select, .formel.textbox .navbar-form select, .navbar-form .formel.password input, .formel.password .navbar-form input, .navbar-form .formel.password select, .formel.password .navbar-form select, .navbar-form .formel.select input, .formel.select .navbar-form input, .navbar-form .formel.select select, .formel.select .navbar-form select, .navbar-form #searchTerm, .navbar-form #sort, .navbar-form #filterBy {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -4853,10 +5008,25 @@ tbody.collapse.in {
   .navbar-form .input-group #skild-content #username,
   #skild-content .navbar-form .input-group #username,
   .navbar-form .input-group #skild-content #login_password,
-  #skild-content .navbar-form .input-group #login_password {
+  #skild-content .navbar-form .input-group #login_password,
+  .navbar-form .input-group .formel.textbox input,
+  .formel.textbox .navbar-form .input-group input,
+  .navbar-form .input-group .formel.textbox select,
+  .formel.textbox .navbar-form .input-group select,
+  .navbar-form .input-group .formel.password input,
+  .formel.password .navbar-form .input-group input,
+  .navbar-form .input-group .formel.password select,
+  .formel.password .navbar-form .input-group select,
+  .navbar-form .input-group .formel.select input,
+  .formel.select .navbar-form .input-group input,
+  .navbar-form .input-group .formel.select select,
+  .formel.select .navbar-form .input-group select,
+  .navbar-form .input-group #searchTerm,
+  .navbar-form .input-group #sort,
+  .navbar-form .input-group #filterBy {
     width: auto;
   }
-  .navbar-form .input-group > .form-control, .navbar-form #skild-content .input-group > #username, #skild-content .navbar-form .input-group > #username, .navbar-form #skild-content .input-group > #login_password, #skild-content .navbar-form .input-group > #login_password {
+  .navbar-form .input-group > .form-control, .navbar-form #skild-content .input-group > #username, #skild-content .navbar-form .input-group > #username, .navbar-form #skild-content .input-group > #login_password, #skild-content .navbar-form .input-group > #login_password, .navbar-form .formel.textbox .input-group > input, .formel.textbox .navbar-form .input-group > input, .navbar-form .formel.textbox .input-group > select, .formel.textbox .navbar-form .input-group > select, .navbar-form .formel.password .input-group > input, .formel.password .navbar-form .input-group > input, .navbar-form .formel.password .input-group > select, .formel.password .navbar-form .input-group > select, .navbar-form .formel.select .input-group > input, .formel.select .navbar-form .input-group > input, .navbar-form .formel.select .input-group > select, .formel.select .navbar-form .input-group > select, .navbar-form .input-group > #searchTerm, .navbar-form .input-group > #sort, .navbar-form .input-group > #filterBy {
     width: 100%;
   }
   .navbar-form .control-label {
@@ -4922,11 +5092,11 @@ tbody.collapse.in {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, #skild-content .btn-group-sm > input.navbar-btn[type="submit"] {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, #skild-content .btn-group-sm > input.navbar-btn[type="submit"], .btn-group-sm > .navbar-btn#searchEntries {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, #skild-content .btn-group-xs > input.navbar-btn[type="submit"] {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, #skild-content .btn-group-xs > input.navbar-btn[type="submit"], .btn-group-xs > .navbar-btn#searchEntries {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5293,7 +5463,7 @@ tbody.collapse.in {
 .label:empty {
   display: none;
 }
-.btn .label, #skild-content input[type="submit"] .label {
+.btn .label, #skild-content input[type="submit"] .label, #searchEntries .label {
   position: relative;
   top: -1px;
 }
@@ -5363,11 +5533,11 @@ a.label:hover, a.label:focus {
 .badge:empty {
   display: none;
 }
-.btn .badge, #skild-content input[type="submit"] .badge {
+.btn .badge, #skild-content input[type="submit"] .badge, #searchEntries .badge {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, #skild-content .btn-group-xs > input[type="submit"] .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, #skild-content .btn-group-xs > input[type="submit"] .badge, .btn-group-xs > #searchEntries .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6397,11 +6567,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer #skild-content input[type="submit"] + .btn, #skild-content .modal-footer input[type="submit"] + .btn, .modal-footer #skild-content .btn + input[type="submit"], #skild-content .modal-footer .btn + input[type="submit"], .modal-footer #skild-content input[type="submit"] + input[type="submit"], #skild-content .modal-footer input[type="submit"] + input[type="submit"] {
+.modal-footer .btn + .btn, .modal-footer #skild-content input[type="submit"] + .btn, #skild-content .modal-footer input[type="submit"] + .btn, .modal-footer #searchEntries + .btn, .modal-footer #skild-content .btn + input[type="submit"], #skild-content .modal-footer .btn + input[type="submit"], .modal-footer #skild-content input[type="submit"] + input[type="submit"], #skild-content .modal-footer input[type="submit"] + input[type="submit"], .modal-footer #skild-content #searchEntries + input[type="submit"], #skild-content .modal-footer #searchEntries + input[type="submit"], .modal-footer .btn + #searchEntries, .modal-footer #skild-content input[type="submit"] + #searchEntries, #skild-content .modal-footer input[type="submit"] + #searchEntries, .modal-footer #searchEntries + #searchEntries {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group #skild-content input[type="submit"] + .btn, #skild-content .modal-footer .btn-group input[type="submit"] + .btn, .modal-footer .btn-group #skild-content .btn + input[type="submit"], #skild-content .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group #skild-content input[type="submit"] + input[type="submit"], #skild-content .modal-footer .btn-group input[type="submit"] + input[type="submit"] {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group #skild-content input[type="submit"] + .btn, #skild-content .modal-footer .btn-group input[type="submit"] + .btn, .modal-footer .btn-group #searchEntries + .btn, .modal-footer .btn-group #skild-content .btn + input[type="submit"], #skild-content .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group #skild-content input[type="submit"] + input[type="submit"], #skild-content .modal-footer .btn-group input[type="submit"] + input[type="submit"], .modal-footer .btn-group #skild-content #searchEntries + input[type="submit"], #skild-content .modal-footer .btn-group #searchEntries + input[type="submit"], .modal-footer .btn-group .btn + #searchEntries, .modal-footer .btn-group #skild-content input[type="submit"] + #searchEntries, #skild-content .modal-footer .btn-group input[type="submit"] + #searchEntries, .modal-footer .btn-group #searchEntries + #searchEntries {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -6866,7 +7036,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption #skild-content input[type="submit"], #skild-content .carousel-caption input[type="submit"] {
+.carousel-caption .btn, .carousel-caption #skild-content input[type="submit"], #skild-content .carousel-caption input[type="submit"], .carousel-caption #searchEntries {
   text-shadow: none;
 }
 
@@ -7216,6 +7386,27 @@ button.close {
   text-align: left;
 }
 
+#form-builder {
+  text-align: left;
+}
+
+.formel.checkbox {
+  padding-left: 0;
+}
+.formel.checkbox label {
+  font-weight: bold;
+  padding-left: 0;
+}
+.formel.checkbox input[type="checkbox"] {
+  position: static;
+  margin-left: 0;
+}
+.formel.checkbox div label {
+  padding-left: 5px;
+  padding-top: 2px;
+  font-weight: normal;
+}
+
 .registration-footer {
   background: #f74326;
   padding-top: 2em;
@@ -7232,4 +7423,39 @@ button.close {
 }
 .registration-footer .copyright {
   padding-bottom: 1em;
+}
+.registration-footer .skild-logo img {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+.registration-footer .skild-caption {
+  display: block;
+  padding-top: 1em;
+}
+
+.navbar ul li > a {
+  text-shadow: none !important;
+  font-size: 14px !important;
+}
+
+#searchEntries {
+  padding-bottom: 1.5em;
+  text-shadow: none;
+  position: relative;
+  bottom: 8px;
+}
+
+#searchTerm {
+  width: 200px;
+  display: inline-block;
+}
+
+.row {
+  max-width: inherit !important;
+}
+
+.navbar-nav {
+  max-height: inherit !important;
+  height: inherit !important;
 }

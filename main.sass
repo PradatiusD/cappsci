@@ -34,6 +34,29 @@ $navbar-border-radius: 0px
 	#username, #login_password
 		@extend .form-control
 
+#form-builder
+	text-align: left
+
+.formel
+	&.textbox, &.password, &.select
+		input, select
+			@extend .form-control
+
+	&.checkbox
+		padding-left: 0
+
+		label
+			font-weight: bold
+			padding-left: 0
+	
+		input[type="checkbox"]
+			position: static
+			margin-left: 0
+
+		div label
+			padding-left: 5px
+			padding-top: 2px
+			font-weight: normal
 
 .registration-footer
 	background: $red-orange
@@ -51,3 +74,42 @@ $navbar-border-radius: 0px
 
 	.copyright
 		padding-bottom: 1em
+
+	.skild-logo img
+		width: 80%
+		margin: 0 auto
+		padding-top: 1em
+
+	.skild-caption
+		display: block
+		padding-top: 1em
+
+// For fixes on: 
+// https://cappsciprizes.skild.com/skild2/cappsciprizes/viewEntryVoting.action
+	
+.navbar ul li > a
+	text-shadow: none !important
+	font-size: 14px !important
+
+#searchEntries
+	@extend .btn
+	@extend .btn-primary
+	padding-bottom: 1.5em
+	text-shadow: none
+	position: relative
+	bottom: 8px
+
+#searchTerm
+	@extend .form-control
+	width: 200px
+	display: inline-block
+
+#sort, #filterBy
+	@extend .form-control
+
+.row
+	max-width: inherit !important
+
+.navbar-nav
+	max-height: inherit !important
+	height: inherit !important
