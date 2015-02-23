@@ -7385,6 +7385,9 @@ button.close {
 #skild-content .login {
   text-align: left;
 }
+#skild-content p {
+  font-size: 14px !important;
+}
 
 #form-builder {
   text-align: left;
